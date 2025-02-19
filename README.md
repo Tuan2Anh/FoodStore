@@ -1,4 +1,4 @@
-<img src="https://github.com/Khanhs3043/ktl/assets/124223086/b039360b-eadc-4056-8486-22314f1f7a2c">
+<img src="FoodStore.webp">
 <h1>About Us</h1>
 <ul>
     <a href="https://github.com/Tuan2Anh"><li>Nguyễn Tuấn Anh - 22014450</li></a>
