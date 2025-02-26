@@ -11,17 +11,17 @@
 
 ### Account Management
 
-- **Account Registration**: Users can register for a new account by providing necessary personal information such as email, password, and other relevant details.
-- **Login**: Users use their registered username and password to log into the system.
-- **Logout**: Allows users to securely exit the system, ensuring their personal information is protected.
-- **Forgot Password**: Users can reset their password through email if they forget their credentials.
+- **Account Registration**: Admins can register for a new account by providing necessary personal information such as email, password, and other relevant details.
+- **Login**: Admins use their registered username and password to log into the system.
+- **Logout**: Allows Admins to securely exit the system, ensuring their personal information is protected.
+- **Forgot Password**: Admins can reset their password through email if they forget their credentials.
 
 ### Product Management
 
-- **Add New Product**: Users can add new products to the system by providing detailed information such as product name, description, and price.
-- **Edit Product**: Users can update existing product details, including changing the name, price, quantity, and description.
-- **Delete Product**: Users can permanently remove a product from the system.
-- **Search Product**: The search feature allows users to find products based on the product name.
+- **Add New Product**: Admins can add new products to the system by providing detailed information such as product name, description, and price.
+- **Edit Product**: Admins can update existing product details, including changing the name, price, quantity, and description.
+- **Delete Product**: Admins can permanently remove a product from the system.
+- **Search Product**: The search feature allows Admins to find products based on the product name.
 
 ### Customer Interactions
 
