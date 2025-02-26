@@ -21,6 +21,11 @@ Route::middleware('auth')->group(function () {
 // Typically this should be part of Breeze's or Laravel's default auth routes
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::get('/register', 'Auth\RegisterController@showRegisterForm')->name('register');
+// Các tuyến đường dẫn Đặt lại Mật khẩu
+Route::get('forgot-password', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('forgot-password', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('reset-password/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('reset-password', 'Auth\ResetPasswordController@reset')->name('password.update');
 
 
 Route::get('/', [ProductController::class, 'home'])->name('products.home');
