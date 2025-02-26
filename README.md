@@ -61,4 +61,4 @@ Visit the Application:
 Open your browser and navigate to http://localhost:8000
 
 <h3>Our Product: <a href='https://supreme-system-jjrxpxjw4p793qxvw-8001.app.github.dev'>FoodStore Website Link</a></h3>
-<h3> <a href='https://github.com/HiuuNguynn/Student-Management.git'>My Repo Link:</a></h3>
+<h3> <a href='https://github.com/Tuan2Anh/FoodStore.git'>My Repo Link:</a></h3>
