@@ -20,8 +20,12 @@
                 <label for="name">Giá</label>
                 <input type="text" name="price" class="form-control" id="price" value="{{ $Product ->price }}" required>
             </div>
-            <div class="from-group">
-                <label for="name">Mô tả sản phẩm</label>
+            <div class="form-group">
+                <label for="quantity">Số lượng</label>
+                <input type="number" name="quantity" class="form-control" id="quantity" value="{{$Product ->quantity}}" required min="0">
+            </div>
+            <div class="form-group">
+                <label for="description">Mô tả sản phẩm</label>
                 <textarea name="description" class="form-control" id="description" rows="3" value="{{ $Product ->description }}" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Cập nhật sản phẩm</button>

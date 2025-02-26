@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh Sách Sản Phẩm</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container mt-5">
-    <h1>Danh Sách Sản Phẩm</h1>
-
+    <div class="d-flex justify-content-between align-items-center">
+        <h1>Danh Sách Sản Phẩm</h1>
+        <a href="/login" class="btn btn-primary">Đăng nhập</a>
+    </div>
     <!-- Tìm kiếm -->
     <form action="{{ route('products.search') }}" method="GET">
         <div class="row">
@@ -46,28 +48,19 @@
                     <td>{{ $products->quantity }}</td>
                     <td>{{ $products->description }}</td>
                     <td>
-                        <a href="{{ route('products.edit', $products->id) }}" class="btn btn-info btn-sm">Sửa</a>
-                        <form action="{{ route('products.destroy', $products->id) }}" method="POST" style="display:inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
-                        </form>
+                        <div class="d-flex align-items-center">
+                            <form action="{{ route('products.buy', $products->id) }}" method="POST">
+                                @csrf
+                                <input type="number" name="quantity" value="1" min="1" max="{{ $products->quantity }}">
+                                <button type="submit" class="btn btn-success btn-sm mr-1 mb-1">Mua</button>
+                            </form>
+                            <a href="{{ route('products.show', $products->id) }}" class="btn btn-info btn-sm mb-1">Chi tiết</a> <!-- Nút chi tiết -->
+                        </div>                        
                     </td>
                 </tr>
             @endforeach
         </tbody>
     </table>
-
-    <div class="d-flex justify-content-between">
-        <a href="{{ route('products.create') }}" class="btn btn-success">Thêm Sản Phẩm</a>
-
-    
-        <!-- Logout Button -->
-        <form action="{{ route('logout') }}" method="POST">
-            @csrf
-            <button type="submit" class="btn btn-secondary">Đăng Xuất</button>
-        </form>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

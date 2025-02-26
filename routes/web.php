@@ -4,9 +4,9 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return redirect()->route('products.index');
@@ -18,6 +18,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/', [ProductController::class, 'home'])->name('products.home');
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
@@ -25,5 +26,8 @@ Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name
 Route::put('/products/{product}', [ProductController::class, 'update'])->name('products.update');
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
 Route::get('/products/search', [ProductController::class, 'search'])->name('products.search');
+Route::post('/{product}/buy', [ProductController::class, 'buy'])->name('products.buy');
+Route::get('/{product}', [ProductController::class, 'show'])->name('products.show');
+
 
 require __DIR__.'/auth.php';

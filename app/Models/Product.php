@@ -16,6 +16,7 @@ class Product extends Model
         'id',
         'productName',
         'price',
+        'quantity', // Thêm quantity vào mảng fillable
         'description',
     ];
 
