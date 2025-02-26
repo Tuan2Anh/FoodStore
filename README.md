@@ -6,7 +6,7 @@
 <p> I'm from PHENIKAA UNIVERSITY</p>
 <h1>About Our Project - FoodStore</h1>
 <p>This is a personal information management website that aims to provide users with a flexible and convenient platform to organize and manage daily personal activities. <br> The website allows users to register and create personal profiles, similar to a blog, where they can share and update information about themselves.</p>
-<p>Detailed project is <a href='[README.md](https://github.com/Tuan2Anh/FoodStore)'>here</a></p>
+<p>Detailed project is <a href='https://github.com/Tuan2Anh/FoodStore'>here</a></p>
 <h2>Main Functions Include:</h2>
 
 ### Account Management
