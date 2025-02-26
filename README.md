@@ -8,24 +8,25 @@
 <p>This is a personal information management website that aims to provide users with a flexible and convenient platform to organize and manage daily personal activities. <br> The website allows users to register and create personal profiles, similar to a blog, where they can share and update information about themselves.</p>
 <p>Detailed project documentation is <a href='https://docs.google.com/document/d/1hDrqdA4-VZbDkz7u34LWrcN0fTXo3lqd/edit?usp=sharing&ouid=113820285057883188251&rtpof=true&sd=true'>here</a></p>
 <h2>Main Functions Include:</h2>
-### Quản lý tài khoản
 
-- **Đăng ký**: Admin có thể đăng ký tài khoản mới bằng cách cung cấp thông tin cá nhân như email, mật khẩu, và các thông tin liên quan khác.
-- **Đăng nhập**: Admin sử dụng tên người dùng và mật khẩu đã đăng ký để đăng nhập vào hệ thống.
-- **Đăng xuất**: Cho phép Admin đăng xuất khỏi hệ thống để đảm bảo bảo mật thông tin cá nhân.
-- **Quên mật khẩu**: Admin có thể yêu cầu đặt lại mật khẩu thông qua email.
+### Account Management
 
-### Quản lý sản phẩm
+- **Account Registration**: Users can register for a new account by providing necessary personal information such as email, password, and other relevant details.
+- **Login**: Users use their registered username and password to log into the system.
+- **Logout**: Allows users to securely exit the system, ensuring their personal information is protected.
+- **Forgot Password**: Users can reset their password through email if they forget their credentials.
 
-- **Thêm sản phẩm mới**: Admin có thể thêm sản phẩm mới vào hệ thống với các thông tin chi tiết như tên sản phẩm, mô tả, và giá cả.
-- **Sửa thông tin sản phẩm**: Admin có thể cập nhật thông tin sản phẩm, bao gồm thay đổi tên, giá, số lượng, và mô tả.
-- **Xóa sản phẩm**: Admin có thể xóa sản phẩm khỏi hệ thống.
-- **Tìm kiếm sản phẩm**: Tính năng tìm kiếm cho phép Admin tìm kiếm sản phẩm dựa trên tên.
+### Product Management
 
-### Tương tác Khách hàng
+- **Add New Product**: Users can add new products to the system by providing detailed information such as product name, description, and price.
+- **Edit Product**: Users can update existing product details, including changing the name, price, quantity, and description.
+- **Delete Product**: Users can permanently remove a product from the system.
+- **Search Product**: The search feature allows users to find products based on the product name.
 
-- **Mua sản phẩm**: Khách hàng có thể mua sản phẩm dựa trên nhu cầu và số lượng mong muốn.
-- **Xem chi tiết sản phẩm**: Khách hàng có thể xem thông tin chi tiết của sản phẩm bao gồm tên, giá, số lượng, và mô tả.
+### Customer Interactions
+
+- **Purchase Product**: Customers can purchase products based on their needs and desired quantities.
+- **View Product Details**: Customers can view detailed information about a product, including name, price, quantity, and description.
 
 <h1 align='center'>How to Deploy - Local Development</h1>
 Clone the Repository:
