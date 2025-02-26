@@ -18,6 +18,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Typically this should be part of Breeze's or Laravel's default auth routes
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::get('/register', 'Auth\RegisterController@showRegisterForm')->name('register');
+
+
 Route::get('/', [ProductController::class, 'home'])->name('products.home');
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');

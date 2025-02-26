@@ -11,7 +11,7 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center">
         <h1>Danh Sách Sản Phẩm</h1>
-        <a href="/login" class="btn btn-primary">Đăng nhập</a>
+        <a href="{{ route('login') }}" class="btn btn-primary">Đăng nhập</a>
     </div>
     <!-- Tìm kiếm -->
     <form action="{{ route('products.search') }}" method="GET">
